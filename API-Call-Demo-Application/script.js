@@ -1,10 +1,3 @@
-const fetchBtn = document.getElementById("fetchBtn");
-const userContainer = document.getElementById("userContainer");
-const loading = document.getElementById("loading"); // Step 5.3  Add loading
-
-// Event Listener (Step 4.1)
-fetchBtn.addEventListener("click", fetchUsers);
-
 // Step 6.1 fetch, display and error handling
 const fetchUsers = () => {
   userContainer.innerHTML = "";
@@ -44,3 +37,10 @@ const displayUsers = (users) => {
     userContainer.appendChild(userDiv);
   });
 };
+
+const fetchBtn = document.getElementById("fetchBtn");
+const userContainer = document.getElementById("userContainer");
+const loading = document.getElementById("loading"); // Step 5.3  Add loading
+
+// Event Listener (Step 4.1)
+fetchBtn.addEventListener("click", fetchUsers);
